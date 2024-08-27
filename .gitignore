@@ -166,3 +166,4 @@ cython_debug/
 test_requests.ipynb
 images_data.csv
 /pictures/
+project.db
