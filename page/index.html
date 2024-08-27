@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Voting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Is this photo AI-generated or not?</h1>
+        <img id="photo" src="" alt="Random Photo" style="display: none;">
+        <button id="vote-ai" style="display: none;" onclick="sendVote(true)">AI</button>
+        <button id="vote-not-ai" style="display: none;" onclick="sendVote(false)">Not AI</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
