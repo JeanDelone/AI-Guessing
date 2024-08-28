@@ -1,14 +1,16 @@
 from fastapi import FastAPI, Depends, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 from sqlalchemy.orm import Session
 import models, schemas, database
 import random
 
-PICTURES_FOLDER = Path("../Pictures")
+PICTURES_FOLDER = Path("../pictures")
 database.init_db()
 
 app = FastAPI()
+app.mount("/page", StaticFiles(directory="page"), name="page")
+app.mount("/pictures", StaticFiles(directory=PICTURES_FOLDER), name="pictures")
 
 # Dependency
 def get_db():
