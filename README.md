@@ -20,3 +20,10 @@ This project is a web-based application designed to quiz users on whether they c
   
 - **Database**:
   - Stores image data (AI-generated vs. real), user responses, and additional metadata like AI models, image features, and timestamps.
+
+
+## TODO
+
+- Display photos that matches user's display ratio. For example to users on phone, display only vertical images
+- Add tinder-like mechanic to swipe left or right photos to vote and load next ones instead of clicking a respective vote button
+- Make UI somewhat good lol
